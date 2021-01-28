@@ -1,8 +1,20 @@
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-</head> 
-<body>
+<html lang="en">
+  <head>
+    <title>
+      Salesforce Lightnig Out Demo 
+    </title>
+  </head>
+  <body class="slds">
+    <header>
+    </header>
+    <main>
+      <div >
+        <p>Lightning Scheduler flow</p>
+        <div id="leaderboard"></div>
+          </div>
+      </main>
+        <footer>
+        </footer>
 <script src="https://ls-comm.force.com/guest1/lightning/lightning.out.js"></script>
 
 <script>
@@ -11,8 +23,8 @@
             $Lightning.createComponent(
                 "lightning:flow",    // top-level component of your app
                 { },    // attributes to set on the component when created
-                "lexcontainer",    // the DOM location to insert the component
-                function(component) {            // API name of the Flow
+                "leaderboard",    // the DOM location to insert the component
+                function(cmp) {            // API name of the Flow
                     component.startFlow("Guest_AB_False_RB_True");
                 }
             );
